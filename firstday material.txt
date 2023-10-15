@@ -1,0 +1,75 @@
+Decalaration
+int max(int a,int b);
+
+declaration ---introduction to the compiler about some variable, method, or class etc
+definition  --- means allocation memory to variable, function
+
+ int x;    //declaration and definition
+x=10;   //initialiazation
+
+
+extern int x;    //declaration
+
+
+#include <iostream>
+
+using namespace std;
+int add();  // function declaration or prototype
+void sub();
+int  main()
+{
+    
+int result=add();   // function call
+cout<<result<<endl;
+sub();
+    return 0;
+}
+int add()   // function definition
+{
+   int num1=10;   //datatype identifier[=value];
+int num2=20;
+int sum=num1+num2;
+return sum; 
+}
+void sub()   // function definition
+{
+   int num1=10;   //datatype identifier[=value];
+int num2=20;
+int sum=num1-num2;
+cout<<sum; 
+}
+
+
+
+
+without declaration
+
+
+#include <iostream>
+
+using namespace std;
+int add()   // function definition
+{
+   int num1=10;   //datatype identifier[=value];
+int num2=20;
+int sum=num1+num2;
+return sum; 
+}
+void sub()   // function definition
+{
+   int num1=10;   //datatype identifier[=value];
+int num2=20;
+int sum=num1-num2;
+cout<<sum; 
+}
+
+add(); 
+
+int  main()
+{
+    
+int result=add();   // function call
+cout<<result<<endl;
+sub();
+    return 0;
+}
